@@ -77,6 +77,11 @@ class ResolveWithPR(DoResolveRule):
         return "pull_request" in json and json["pull_request"].get("merged_at") is not None
 
 
+@dataclass
+class ResolveWithUSBill(DoResolveRule):
+    ...
+
+
 class ResolutionValueRule(Rule):
     ...
 
